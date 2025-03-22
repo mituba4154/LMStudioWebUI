@@ -1,5 +1,6 @@
 ⚠️ これは **非公式** プロジェクトであり、**LM Studio によって承認または支持されているわけではありません**。
-またこれは更に**非公式**のフォークであり**フォーク元のYorkie氏に承認又は指示されているわけではありません**。
+
+またこれは更に**非公式**のフォークであり**フォーク元のYorkie氏に承認又は支持されているわけではありません**。
 
 ⚠️ This is **an unofficial project** and is not endorsed or supported by LM Studio.
 Furthermore, this is an unofficial fork and is not endorsed or supported by the original forker, Yorkie.
