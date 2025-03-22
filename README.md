@@ -1,103 +1,104 @@
-⚠️ This is an **unofficial** project and is **not affiliated with or endorsed by LM Studio**.
+⚠️ これは **非公式** プロジェクトであり、**LM Studio によって承認または支持されているわけではありません**。
+またこれは更に**非公式**のフォークであり**フォーク元のYorkie氏に承認又は指示されているわけではありません**。
 
-# LM Studio Chat WebUI(unofficial)
-
-This is a simple, browser-based chat interface for interacting with your LM Studio server. It allows you to connect to your locally hosted LM Studio model and chat with it from any device with a web browser, including mobile phones.
-
-## Features
-
-- Dark mode interface
-- Connect to any LM Studio server
-- Chat with your LM Studio model
-- View token usage and response time for each message
-- LaTeX Math Rendering and Markdown Rendering
-- Mobile-friendly design
-- Super Cool new Purple theme **NEW**
-- Chats **NEW**
-- Vision Model Support **NEW**
-- Choose your model **NEW**
-- Delete Chats **NEW**
+⚠️ This is **an unofficial project** and is not endorsed or supported by LM Studio.
+Furthermore, this is an unofficial fork and is not endorsed or supported by the original forker, Yorkie.
 
 
-## Screenshots 📸
+# LM Studio チャット WebUI（非公式）
+
+これは、LM Studio サーバーと対話するためのシンプルなブラウザベースのチャットインターフェースです。ローカルにホストされた LM Studio モデルに接続し、任意のデバイスからチャットすることができます。
+
+## 特徴
+
+- ダークモードインターフェース
+- 任意の LM Studio サーバーに接続可能
+- LM Studio モデルとのチャット
+- 各メッセージのトークン使用量と応答時間の表示
+- LaTeX 数式レンダリングと Markdown レンダリング
+- モバイルフレンドリーなデザイン
+- 新しいパープルテーマ **NEW**
+- チャット機能 **NEW**
+- ビジョンモデルサポート **NEW**
+- モデルの選択 **NEW**
+- チャットの削除 **NEW**
+
+## スクリーンショット 📸
 ![image](https://github.com/user-attachments/assets/7944a30a-6e52-467b-bf27-309f8db0bfde)
 ![image](https://github.com/user-attachments/assets/cecc2e50-1583-4ce6-a092-10adcb2359f3)
 ![image](https://github.com/user-attachments/assets/717bb8c6-ff62-4574-95e4-146909302180)
 ![image](https://github.com/user-attachments/assets/22275a46-f332-4ab9-b727-678a98aef7af)
 ![image](https://github.com/user-attachments/assets/d7cba468-166b-4d74-a98a-37ca72093b83)
 
+## セットアップ手順
 
+### デスクトップユーザー向け
 
+1. このリポジトリから `lmstudiowebui.html` ファイルをダウンロードします。
+2. コンピュータのアクセスしやすい場所に保存します。
 
-## Setup Instructions
+### モバイルユーザー向け
+これは Android デバイスでそのまま動作します。iOS では Microsoft Edge または他のブラウザでファイルを開く必要があります。Safari/Chrome は動作しません。
+以下の方法で `lmstudiowebui.html` ファイルをモバイルデバイスに取得できます：
 
-### For Desktop Users
+1. **直接ダウンロード**：
+   - モバイルデバイスのウェブブラウザでこのリポジトリを開きます。
+   - `lmstudiowebui.html` ファイルを見つけて直接デバイスにダウンロードします。
 
-1. Download the `lmstudiowebui.html` file from this repository.
-2. Save it to a location on your computer that you can easily access.
+2. **自分にメール**：
+   - コンピュータで `lmstudiowebui.html` ファイルをダウンロードします。
+   - 添付ファイルとして自分にメールします。
+   - モバイルデバイスでメールを開き、添付ファイルをダウンロードします。
 
-### For Mobile Users
-This works out of the box on Android devices. For iOS you need to open the file in Microsoft Edge or another browser. Safari/Chrome do not work. 
-There are several ways to get the `lmstudiowebui.html` file on your mobile device:
+3. **クラウドストレージ**：
+   - `lmstudiowebui.html` ファイルを Google ドライブ、Dropbox、iCloud などのクラウドストレージサービスにアップロードします。
+   - それぞれのクラウドストレージアプリを使用してモバイルデバイスからファイルにアクセスします。
 
-1. **Direct Download**: 
-   - Open this repository on your mobile device's web browser.
-   - Find the `lmstudiowebui.html` file and download it directly to your device.
+4. **ファイル転送アプリ**：
+   - AirDrop（iOS デバイス用）や近くの共有（Android デバイス用）などのアプリを使用して、コンピュータからモバイルデバイスにファイルを転送します。
 
-2. **Email to Yourself**:
-   - Download the `lmstudiowebui.html` file on your computer.
-   - Email it to yourself as an attachment.
-   - Open the email on your mobile device and download the attachment.
+## 使用手順
 
-3. **Cloud Storage**:
-   - Upload the `lmstudiowebui.html` file to a cloud storage service like Google Drive, Dropbox, or iCloud.
-   - Access the file from your mobile device using the respective cloud storage app.
+1. **LM Studio サーバーを起動**：
+   - コンピュータで LM Studio を開きます。
+   - 「サーバー」タブに移動します（0.3.x -> 開発者 -> ローカルサーバー）。
+   - CORS が有効でローカルネットワークでの提供が有効であることを確認します。
+   - 「サーバーを開始」をクリックし、サーバーアドレスをメモします。
 
-4. **File Transfer Apps**:
-   - Use apps like AirDrop (for iOS devices) or nearby sharing (for Android devices) to transfer the file from your computer to your mobile device.
+2. **チャットインターフェースを開く**：
+   - デスクトップでは：`lmstudiowebui.html` ファイルをダブルクリックしてデフォルトのウェブブラウザで開きます。
+   - モバイルでは：ファイルマネージャーアプリを使用してダウンロードした `lmstudiowebui.html` ファイルを見つけ、ウェブブラウザで開きます。
 
-## Usage Instructions
+3. **LM Studio サーバーに接続**：
+   - チャットインターフェースの上部にある入力フィールドに LM Studio サーバーアドレスを入力します。
+   - 「接続」ボタンをクリックします。
 
-1. **Start LM Studio Server**:
-   - Open LM Studio on your computer.
-   - Go to the "Server" tab (In 0.3.x -> Developer -> Local Server).
-   - Ensure that CORS is enabled and Serve on Local Network is enabled.
-   - Click "Start Server" and note down the server address.
+4. **チャットを開始**：
+   - 接続が完了したら、画面下部の入力フィールドにメッセージを入力して送信します。
+   - Enter キーを押すか、送信をタップしてメッセージを送信します。
+   - モデルの応答がチャットウィンドウに表示されます。
 
-2. **Open the Chat Interface**:
-   - On desktop: Double-click the `lmstudiowebui.html` file to open it in your default web browser.
-   - On mobile: Use a file manager app to locate the downloaded `lmstudiowebui.html` file and open it with your web browser.
+## トラブルシューティング
 
-3. **Connect to LM Studio Server**:
-   - In the chat interface, enter the LM Studio server address in the input field at the top. 
-   - Click the "Connect" button.
+- **サーバーに接続できない**：
+  - LM Studio サーバーがコンピュータで稼働していることを確認します。
+  - 正しいサーバーアドレスを使用していることを確認します。
+  - 別のデバイスからアクセスする場合、両方のデバイスが同じネットワークに接続されていることを確認します。
 
-4. **Start Chatting**:
-   - Once connected, you can start typing messages in the input field at the bottom of the screen.
-   - Press Enter or tap Send to send your message.
-   - The model's responses will appear in the chat window.
+- **応答が遅い**：
+  - LM Studio の処理速度はコンピュータの性能に依存します。大きなモデルは応答に時間がかかることがあります。
 
-## Troubleshooting
+- **インターフェースが読み込まれない**：
+  - `lmstudiowebui.html` ファイルを別のウェブブラウザで開いてみてください。
 
-- **Can't connect to server**: 
-  - Ensure LM Studio Server is running on your computer.
-  - Check that you're using the correct server address.
-  - If accessing from another device, make sure both devices are on the same network.
+## セキュリティに関する注意
 
-- **Slow responses**: 
-  - LM Studio processing speed depends on your computer's capabilities. Larger models may take longer to respond.
+このインターフェースはローカル使用のみを目的としています。適切なセキュリティ対策を講じずに LM Studio サーバーを公開インターネットに公開しないでください。
 
-- **Interface not loading**: 
-  - Try opening the `lmstudiowebui.html` file with a different web browser.
+## フィードバックと貢献
 
-## Security Note
+問題が発生した場合や改善の提案がある場合は、このリポジトリに issue を作成してください。プルリクエストによる貢献も歓迎します！
 
-This interface is designed for local use only. Do not expose your LM Studio server to the public internet without proper security measures in place.
-
-## Feedback and Contributions
-
-If you encounter any issues or have suggestions for improvements, please open an issue in this repository. Contributions via pull requests are welcome!
-
-## Star History
+## スター履歴
 
 [![Star History Chart](https://api.star-history.com/svg?repos=YorkieDev/LMStudioWebUI&type=Date)](https://star-history.com/#YorkieDev/LMStudioWebUI&Date)
